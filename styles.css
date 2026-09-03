@@ -1,0 +1,87 @@
+/* Step A: Reset some default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Step B: Style the body for readability */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Step C: Navbar fixed on the left side (requirement #21) */
+#navbar {
+  position: fixed;       /* Always visible */
+  top: 0;
+  left: 0;               /* Stick to left edge */
+  width: 220px;
+  height: 100%;          /* Full height */
+  background-color: #222;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Step D: Navbar header styling */
+#navbar header {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Step E: Nav links styling */
+.nav-link {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* Step F: Main content area shifted to the right */
+#main-doc {
+  margin-left: 240px;   /* Leaves space for navbar */
+  padding: 20px;
+}
+
+/* Step G: Section headers */
+.main-section header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Step H: Paragraphs inside sections */
+.main-section p {
+  margin-bottom: 10px;
+}
+
+/* Step I: Code blocks styling */
+.main-section code {
+  display: block;
+  background-color: #eee;
+  padding: 8px;
+  margin: 10px 0;
+  border-left: 3px solid #666;
+  font-family: monospace;
+}
+
+/* Step J: Lists styling */
+.main-section ul {
+  margin: 10px 0 20px 20px;
+}
+
+.main-section li {
+  margin-bottom: 5px;
+}
+
+/* Step K: Media query (requirement #22) */
+@media (max-width: 768px) {
